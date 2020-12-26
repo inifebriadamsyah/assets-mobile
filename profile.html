@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sistem Informasi Manajemen Asset | Unit Pendidikan dan Pelatihan Petrokimia Gresik</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="css/themes/lite-purple.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-content-wrap d-flex flex-column">
+        <div class="main-header" style="box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2)">
+            <div class="logo">
+                <img src="images/logoo.png" alt="" />
+            </div>
+            <div class="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="d-flex align-items-center">
+                <div>
+                    <h5 style="margin-top: 12px" class="d-flex justify-content-center">
+                        <strong>SIM Aset Diklat</strong>
+                    </h5>
+                </div>
+            </div>
+
+            <div class="header-part-right">
+                <!-- Full screen toggle -->
+                <i class="i-Full-Screen header-icon d-none d-sm-inline-block" data-fullscreen></i>
+                <!-- Notificaiton -->
+                <div class="dropdown">
+                    <div class="badge-top-container" role="button" id="dropdownNotification" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span class="badge badge-primary">3</span>
+                        <i class="i-Bell text-muted header-icon"></i>
+                    </div>
+                    <!-- Notification dropdown -->
+                    <div class="dropdown-menu dropdown-menu-right notification-dropdown rtl-ps-none"
+                        aria-labelledby="dropdownNotification" data-perfect-scrollbar data-suppress-scroll-x="true">
+                        <div class="dropdown-item d-flex">
+                            <div class="notification-icon">
+                                <i class="i-Speach-Bubble-6 text-primary mr-1"></i>
+                            </div>
+                            <div class="notification-details flex-grow-1">
+                                <p class="m-0 d-flex align-items-center">
+                                    <span>New message</span>
+                                    <span class="badge badge-pill badge-primary ml-1 mr-1">new</span>
+                                    <span class="flex-grow-1"></span>
+                                    <span class="text-small text-muted ml-auto">10 sec ago</span>
+                                </p>
+                                <p class="text-small text-muted m-0">
+                                    James: Hey! are you busy?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dropdown-item d-flex">
+                            <div class="notification-icon">
+                                <i class="i-Receipt-3 text-success mr-1"></i>
+                            </div>
+                            <div class="notification-details flex-grow-1">
+                                <p class="m-0 d-flex align-items-center">
+                                    <span>New order received</span>
+                                    <span class="badge badge-pill badge-success ml-1 mr-1">new</span>
+                                    <span class="flex-grow-1"></span>
+                                    <span class="text-small text-muted ml-auto">2 hours ago</span>
+                                </p>
+                                <p class="text-small text-muted m-0">
+                                    1 Headphone, 3 iPhone x
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dropdown-item d-flex">
+                            <div class="notification-icon">
+                                <i class="i-Empty-Box text-danger mr-1"></i>
+                            </div>
+                            <div class="notification-details flex-grow-1">
+                                <p class="m-0 d-flex align-items-center">
+                                    <span>Product out of stock</span>
+                                    <span class="badge badge-pill badge-danger ml-1 mr-1">3</span>
+                                    <span class="flex-grow-1"></span>
+                                    <span class="text-small text-muted ml-auto">10 hours ago</span>
+                                </p>
+                                <p class="text-small text-muted m-0">
+                                    Headphone E67, R98, XL90, Q77
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dropdown-item d-flex">
+                            <div class="notification-icon">
+                                <i class="i-Data-Power text-success mr-1"></i>
+                            </div>
+                            <div class="notification-details flex-grow-1">
+                                <p class="m-0 d-flex align-items-center">
+                                    <span>Server Up!</span>
+                                    <span class="badge badge-pill badge-success ml-1 mr-1">3</span>
+                                    <span class="flex-grow-1"></span>
+                                    <span class="text-small text-muted ml-auto">14 hours ago</span>
+                                </p>
+                                <p class="text-small text-muted m-0">
+                                    Server rebooted successfully
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Notificaiton End -->
+            </div>
+        </div>
+        <!-- ============ Body content start ============= -->
+        <div class="main-content">
+            <div class="breadcrumb">
+                <h1>Data Aset Diklat</h1>
+            </div>
+            <!--  end of col -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="ruang1-basic-tab" data-toggle="tab" href="#ruang1Basic"
+                        role="tab" aria-controls="ruang1Basic" aria-selected="true">Ruang 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="ruang3-basic-tab" data-toggle="tab" href="#ruang3Basic" role="tab"
+                        aria-controls="ruang3Basic" aria-selected="false">Ruang 2</a>
+                </li>
+            </ul>
+            <br />
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" style="margin-bottom: 36px" id="ruang1Basic" role="tabpanel"
+                    aria-labelledby="ruang1-basic-tab">
+                    <!-- end of col-->
+                    <h4 class="card-title mb-2">
+                        Enaknya di model List apa Tabel Mas?
+                    </h4>
+                    <p>
+                        Kalau Tabel boleh pake ini, yang penting ada kode asset dan
+                        jumlah.
+                    </p>
+                    <div class="table-responsive">
+                        <table class="display table table-striped table-bordered" id="alternative_pagination_table"
+                            style="width: 100%">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Jenis Barang</th>
+                                    <th>Satuan</th>
+                                    <th>Jumlah</th>
+                                    <th>No. Inventaris</th>
+                                    <th>Status</th>
+                                    <th>Lokasi</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Proyektor</td>
+                                    <td>unit</td>
+                                    <td>Jumlah</td>
+                                    <td>No. Inventaris</td>
+                                    <td><span class="badge badge-success">Tersedia</span></td>
+                                    <td>Lemari</td>
+                                    <td>
+                                        <a class="text-success mr-2" href="# "><i
+                                                class="nav-icon i-Pen-2 font-weight-bold"></i></a><a
+                                            class="text-danger mr-2" href="# "><i
+                                                class="nav-icon i-Close-Window font-weight-bold"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Proyektor</td>
+                                    <td>unit</td>
+                                    <td>Jumlah</td>
+                                    <td>No. Inventaris</td>
+                                    <td><span class="badge badge-success">Tersedia</span></td>
+                                    <td>Lemari</td>
+                                    <td>
+                                        <a class="text-success mr-2" href="# "><i
+                                                class="nav-icon i-Pen-2 font-weight-bold"></i></a><a
+                                            class="text-danger mr-2" href="# "><i
+                                                class="nav-icon i-Close-Window font-weight-bold"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- end of col-->
+                </div>
+                <div class="tab-pane fade mb-4" id="ruang2Basic" role="tabpanel" aria-labelledby="ruang2-basic-tab">
+                    <!-- end of col-->
+                    <h4 class="card-title mb-2">
+                        Enaknya di model List apa Tabel Mas?
+                    </h4>
+                    <p>
+                        Kalau Tabel boleh pake ini, yang penting ada kode asset dan
+                        jumlah.
+                    </p>
+                    <div class="table-responsive">
+                        <table class="display table table-striped table-bordered" id="alternative_pagination_table"
+                            style="width: 100%">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Jenis Barang</th>
+                                    <th>Satuan</th>
+                                    <th>Jumlah</th>
+                                    <th>No. Inventaris</th>
+                                    <th>Status</th>
+                                    <th>Lokasi</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Proyektor</td>
+                                    <td>unit</td>
+                                    <td>Jumlah</td>
+                                    <td>No. Inventaris</td>
+                                    <td><span class="badge badge-success">Tersedia</span></td>
+                                    <td>Lemari</td>
+                                    <td>
+                                        <a class="text-success mr-2" href="# "><i
+                                                class="nav-icon i-Pen-2 font-weight-bold"></i></a><a
+                                            class="text-danger mr-2" href="# "><i
+                                                class="nav-icon i-Close-Window font-weight-bold"></i></a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Proyektor</td>
+                                    <td>unit</td>
+                                    <td>Jumlah</td>
+                                    <td>No. Inventaris</td>
+                                    <td><span class="badge badge-success">Tersedia</span></td>
+                                    <td>Lemari</td>
+                                    <td>
+                                        <a class="text-success mr-2" href="# "><i
+                                                class="nav-icon i-Pen-2 font-weight-bold"></i></a><a
+                                            class="text-danger mr-2" href="# "><i
+                                                class="nav-icon i-Close-Window font-weight-bold"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- end of col-->
+                </div>
+                <div class="tab-pane fade mb-4" id="ruang3Basic" role="tabpanel" aria-labelledby="ruang3-basic-tab">
+                    <!-- right control icon-->
+                    <div class="accordion" id="accordionRightIcon">
+                        <div class="card">
+                            <div
+                                class="card-header header-elements-inline d-flex justify-content-start align-items-start">
+                                <p class="card-title ul-collapse__icon--size ul-collapse__right-icon mb-0"
+                                    style="font-size: 14px; font-weight: 500">
+                                    <a class="text-default collapsed my-2" data-toggle="collapse"
+                                        href="#accordion-item-icons-1" aria-expanded="false">1. Nama Asset</a>
+                                </p>
+                                <span class="badge badge-pill badge-secondary lg p-2 mx-3">12</span>
+                            </div>
+                            <div class="collapse" id="accordion-item-icons-1" data-parent="#accordionRightIcon">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-2">List With Badges</h4>
+                                    <p>
+                                        Add .list-group-flush to remove some borders and rounded
+                                        corners to render list group items edge-to-edge in a
+                                        parent container
+                                    </p>
+                                    <ul class="list-group">
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Cras justo odio<span class="badge badge-primary badge-pill">4</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Dapibus ac facilisis in
+                                            <span class="badge badge-info badge-pill">2</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Morbi leo risus<span class="badge badge-success badge-pill">1</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Morbi leo risus<span class="badge badge-warning badge-pill">1</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Morbi leo risus<span class="badge badge-danger badge-pill">1</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div
+                                class="card-header header-elements-inline d-flex justify-content-start align-items-start">
+                                <p class="card-title ul-collapse__icon--size ul-collapse__right-icon mb-0"
+                                    style="font-size: 14px; font-weight: 500">
+                                    <a class="text-default collapsed my-2" data-toggle="collapse"
+                                        href="#accordion-item-icons-2" aria-expanded="false">1. Nama Asset</a>
+                                </p>
+                                <span class="badge badge-pill badge-secondary lg p-2 mx-3">12</span>
+                            </div>
+                            <div class="collapse" id="accordion-item-icons-2" data-parent="#accordionRightIcon">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-2">List With Badges</h4>
+                                    <p>
+                                        Add .list-group-flush to remove some borders and rounded
+                                        corners to render list group items edge-to-edge in a
+                                        parent container
+                                    </p>
+                                    <ul class="list-group">
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Cras justo odio<span class="badge badge-primary badge-pill">4</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Dapibus ac facilisis in
+                                            <span class="badge badge-info badge-pill">2</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Morbi leo risus<span class="badge badge-success badge-pill">1</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Morbi leo risus<span class="badge badge-warning badge-pill">1</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Morbi leo risus<span class="badge badge-danger badge-pill">1</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionRightIcon">
+                        <div class="card">
+                            <div
+                                class="card-header header-elements-inline d-flex justify-content-start align-items-start">
+                                <p class="card-title ul-collapse__icon--size ul-collapse__right-icon mb-0"
+                                    style="font-size: 14px; font-weight: 500">
+                                    <a class="text-default collapsed my-2" data-toggle="collapse"
+                                        href="#accordion-item-icons-2" aria-expanded="false">1. Nama Asset</a>
+                                </p>
+                                <span class="badge badge-pill badge-secondary lg p-2 mx-3">12</span>
+                            </div>
+                            <div class="collapse" id="accordion-item-icons-2" data-parent="#accordionRightIcon">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-2">List With Badges</h4>
+                                    <p>
+                                        Add .list-group-flush to remove some borders and rounded
+                                        corners to render list group items edge-to-edge in a
+                                        parent container
+                                    </p>
+                                    <ul class="list-group">
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Cras justo odio<span class="badge badge-primary badge-pill">4</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Dapibus ac facilisis in
+                                            <span class="badge badge-info badge-pill">2</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Morbi leo risus<span class="badge badge-success badge-pill">1</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Morbi leo risus<span class="badge badge-warning badge-pill">1</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Morbi leo risus<span class="badge badge-danger badge-pill">1</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionRightIcon">
+                        <div class="card">
+                            <div
+                                class="card-header header-elements-inline d-flex justify-content-start align-items-start">
+                                <p class="card-title ul-collapse__icon--size ul-collapse__right-icon mb-0"
+                                    style="font-size: 14px; font-weight: 500">
+                                    <a class="text-default collapsed my-2" data-toggle="collapse"
+                                        href="#accordion-item-icons-3" aria-expanded="false">1. Nama Asset</a>
+                                </p>
+                                <span class="badge badge-pill badge-secondary lg p-2 mx-3">12</span>
+                            </div>
+                            <div class="collapse" id="accordion-item-icons-3" data-parent="#accordionRightIcon">
+                                <div class="card-body">
+                                    <h4 class="card-title mb-2">List With Badges</h4>
+                                    <p>
+                                        Add .list-group-flush to remove some borders and rounded
+                                        corners to render list group items edge-to-edge in a
+                                        parent container
+                                    </p>
+                                    <ul class="list-group">
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Cras justo odio<span class="badge badge-primary badge-pill">4</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Dapibus ac facilisis in
+                                            <span class="badge badge-info badge-pill">2</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Morbi leo risus<span class="badge badge-success badge-pill">1</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Morbi leo risus<span class="badge badge-warning badge-pill">1</span>
+                                        </li>
+                                        <li
+                                            class="list-group-item d-flex justify-content-between align-items-center">
+                                            Morbi leo risus<span class="badge badge-danger badge-pill">1</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <!-- fotter end -->
+        </div>
+    </div>
+    <div class="auth-layout-wrap" style="background-image: url(images/bg3.jpg)">
+        <div class="auth-content">
+            <div class="card o-hidden">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="p-4">
+                            <div class="text-center mb-4"><img src="images/logoo.png" alt="" height="80px">
+                            </div>
+                            <h5 class="text-center">
+                                Sistem Informasi Manajemen Asset <br> <strong>Diklat Petrokimia Gresik</strong>
+                            </h5>
+                            <br>
+                            <h1 class="mb-3 mx-3 text-18">Sign In</h1>
+                            <form class="mx-3">
+                                <div class="form-group">
+                                    <label for="email">Email address</label>
+                                    <input class="form-control form-control-rounded" id="email" type="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input class="form-control form-control-rounded" id="password" type="password">
+                                </div>
+                                <button class="btn btn-rounded btn-primary btn-block mt-4 d-flex justify-content-center text-center" style="width: 200px;">Sign
+                                    In</button>
+                            </form>
+                            <div class="mt-3 text-center">
+                                <a class="text-muted" href="forgot.html">
+                                    <u>Forgot Password?</u></a>
+                            </div>
+    
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
