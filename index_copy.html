@@ -15,6 +15,62 @@
     <link href="css/themes/lite-purple.min.css" rel="stylesheet" />
     <link href="css/plugins/perfect-scrollbar.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/plugins/datatables.min.css" />
+    <style>
+        /* CSS used here will be applied after bootstrap.css */
+        .closeBtn:focus {
+            outline: none;
+        }
+
+        .close {
+            color: gray;
+        }
+
+        .wrapper {
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 5px;
+            height: 50px;
+        }
+
+        .list {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            min-width: 3500px;
+
+            margin-top: 0px;
+        }
+
+        .list li {
+            display: table-cell;
+            position: relative;
+            text-align: center;
+            cursor: grab;
+            cursor: -webkit-grab;
+            color: #efefef;
+            vertical-align: middle;
+        }
+
+        .scroller {
+            text-align: center;
+            cursor: pointer;
+            display: none;
+            padding: 7px;
+            padding-top: 11px;
+            white-space: no-wrap;
+            vertical-align: middle;
+            background-color: #fff;
+        }
+
+        .scroller-right {
+            float: right;
+        }
+
+        .scroller-left {
+            float: left;
+        }
+    </style>
 </head>
 
 <body class="text-left">
@@ -232,7 +288,8 @@
                     <h1>Data Aset Diklat</h1>
                 </div>
                 <!--  end of col -->
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <div class="bordered_1px mb-1"></div>
+                <ul class="nav nav-pills" style="font-size: 12px;" id="myPillTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="ruang1-basic-tab" data-toggle="tab" href="#ruang1Basic"
                             role="tab" aria-controls="ruang1Basic" aria-selected="true">Ruang 1</a>
@@ -241,8 +298,15 @@
                         <a class="nav-link" id="ruang3-basic-tab" data-toggle="tab" href="#ruang3Basic" role="tab"
                             aria-controls="ruang3Basic" aria-selected="false">Ruang 2</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="ruang1-basic-tab" data-toggle="tab" href="#ruang1Basic" role="tab"
+                            aria-controls="ruang1Basic" aria-selected="true">Ruang 3</a>
+                    </li>
+
                 </ul>
-                <br />
+                <div class="bordered_1px mt-1">
+                </div>
+                <br>
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" style="margin-bottom: 36px" id="ruang1Basic" role="tabpanel"
                         aria-labelledby="ruang1-basic-tab">

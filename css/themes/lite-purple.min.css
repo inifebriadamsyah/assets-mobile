@@ -4718,16 +4718,19 @@ input[type="button"].btn-block {
 
 .nav-tabs {
     border-bottom: 1px solid #dee2e6;
+    font-size: 12px;
 }
 
 .nav-tabs .nav-item {
     margin-bottom: -1px;
+    font-size: 12px;
 }
 
 .nav-tabs .nav-link {
     border: 1px solid transparent;
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
+    font-size: 12px;
 }
 
 .nav-tabs .nav-link:hover,
@@ -23845,11 +23848,12 @@ ul.metismenu {
 }
 
 .card-profile-1 .avatar {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
     margin: auto;
     border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .card-ecommerce-1 .card-body [class^="i-"] {
@@ -24975,15 +24979,22 @@ html [type="button"],
 
 .nav-tabs {
     border: 0;
+    font-size: 12px;
+    overflow-x: visible;
+    overflow-y: hidden;
+    display: -webkit-box;
 }
 
 .nav-tabs .nav-item .nav-link {
     border: 0;
-    padding: 1rem;
+    padding: 0.75rem;
+    float: none;
 }
 
 .nav-tabs .nav-item .nav-link:not(.disabled) {
     color: inherit;
+    padding: 0.75rem;
+    float: none;
 }
 
 .nav-tabs .nav-item .nav-link.active {
@@ -30134,6 +30145,7 @@ ngb-rating .half {
 
 .nav-tabs {
     border-bottom: 1px solid #e97d23;
+    font-size: 12px;
 }
 
 .nav-tabs .nav-item .nav-link.active {
@@ -35411,4 +35423,9 @@ ul.scroll_tabs_container {
 
 .scroll_tabs_theme_dark div.scroll_tab_inner span.tab_selected, .scroll_tabs_theme_dark div.scroll_tab_inner li.tab_selected {
   background-color: #666666;
+}
+
+.bordered_1px {
+    border-top: 1px solid #e0e0e0;
+    padding-bottom: 0px;
 }
