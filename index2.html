@@ -12,78 +12,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="css/themes/lite-purple.min.css" rel="stylesheet" />
-    <link href="css/plugins/perfect-scrollbar.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="css/themes/lite-purple.min.css" rel="stylesheet"/>
+    <link href="css/plugins/perfect-scrollbar.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/plugins/datatables.min.css" />
-    <link href="css/plugins/bootstrap-nav-tab-scrollable.css" rel="stylesheet" />
-    <link href="css/plugins/demo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/plugins/bootstrap-nav-tab-scrollable.css"/>
+    <link rel="stylesheet" href="css/plugins/demo.css"/>
     <style>
-        .nav-tabs-horizontal img {
-            height: 30px;
-        }
-
-        .tab-content img {
-            width: 320px;
-            height: auto;
-        }
-
-        .nav-tabs-horizontal {
-            border-bottom: 0px;
-        }
-
-        li.active {
-            border-bottom: 2px solid rgb(30, 48, 79);
-        }
-
-        a {
-            border: none !important;
-        }
-    </style>
-    <style>
-        .horizontal-scrollable-tabs {
-            min-height: 50px;
-        }
-
-        .horizontal-scrollable-tabs .arrow-right {
-            float: right;
-        }
-
-        .horizontal-scrollable-tabs .arrow-left {
-            float: left;
-        }
-
-        /* Customize your arrows here */
-        .horizontal-scrollable-tabs .scroller {
-            font-size: 18px;
-            color: rgb(120, 36, 36);
-            padding: 10px 10px;
-            display: none;
-        }
-
-        .horizontal-scrollable-tabs .scroller.disabled {
-            color: gray;
-        }
-
-        .horizontal-scrollable-tabs .horizontal-tabs .nav-tabs-horizontal {
-            overflow-x: auto;
-            overflow-y: hidden;
-            display: -webkit-box;
-            display: -moz-box;
-        }
-
-        /* As it has a mobile focus the scrollbar is removed */
-        .horizontal-scrollable-tabs .horizontal-tabs .nav-tabs-horizontal::-webkit-scrollbar {
-            width: 0 !important;
-        }
-
-        /* It's good to add a min-width so that the items have the same width */
-        .horizontal-scrollable-tabs .horizontal-tabs .nav-tabs-horizontal>li {
-            float: none;
-            min-width: 50px;
-            text-align: center;
-        }
+        
     </style>
 </head>
 
@@ -291,6 +230,38 @@
                                     </p>
                                 </div>
                             </div>
+                            <div class="dropdown-item d-flex">
+                                <div class="notification-icon">
+                                    <i class="i-Data-Power text-success mr-1"></i>
+                                </div>
+                                <div class="notification-details flex-grow-1">
+                                    <p class="m-0 d-flex align-items-center">
+                                        <span>Server Up!</span>
+                                        <span class="badge badge-pill badge-success ml-1 mr-1">3</span>
+                                        <span class="flex-grow-1"></span>
+                                        <span class="text-small text-muted ml-auto">14 hours ago</span>
+                                    </p>
+                                    <p class="text-small text-muted m-0">
+                                        Server rebooted successfully
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item d-flex">
+                                <div class="notification-icon">
+                                    <i class="i-Data-Power text-success mr-1"></i>
+                                </div>
+                                <div class="notification-details flex-grow-1">
+                                    <p class="m-0 d-flex align-items-center">
+                                        <span>Server Up!</span>
+                                        <span class="badge badge-pill badge-success ml-1 mr-1">3</span>
+                                        <span class="flex-grow-1"></span>
+                                        <span class="text-small text-muted ml-auto">14 hours ago</span>
+                                    </p>
+                                    <p class="text-small text-muted m-0">
+                                        Server rebooted successfully
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Notificaiton End -->
@@ -301,12 +272,95 @@
                 <div class="breadcrumb">
                     <h1>Data Aset Diklat</h1>
                 </div>
-
                 <!--  end of col -->
-                <br >
-                <br >
-                <br >
-                <br >
+
+                <div id="tabs2" class="scroll_tabs_theme_light" role="tablist">
+                    <span><a id="proyektor-basic-tab" data-toggle="tab" href="#laptopBasic" role="tab"
+                            aria-controls="proyektorBasic" aria-selected="true">Proyektor</a></span>
+                    <span><a id="laptop-basic-tab" data-toggle="tab" href="#laptopBasic" role="tab"
+                            aria-controls="ruang2Basic" aria-selected="true">Laptop</a></span>
+                    <span><a id="ruang1-basic-tab" data-toggle="tab" href="#ruang2Basic" role="tab"
+                            aria-controls="ruang2Basic" aria-selected="true">Tripod</a></span>
+                    <span><a id="ruang1-basic-tab" data-toggle="tab" href="#ruang2Basic" role="tab"
+                            aria-controls="ruang2Basic" aria-selected="true">Camera</a></span>
+                    <span><a id="ruang1-basic-tab" data-toggle="tab" href="#ruang2Basic" role="tab"
+                            aria-controls="ruang2Basic" aria-selected="true">HandyCam</a></span>
+                </div>
+                <br>
+                <div>
+                    <div class="card mb-4">
+                        <div class="card-header">010203-Kode Asset</div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Nama Aset</h5>
+                            <div class="row">
+                                <div class="col-xs-6 ml-3 mb-2">
+                                    <p class="text-primary mb-1"><i class="i-Home1 mr-2"
+                                            style="font-size: 12px;"></i>Lokasi</p>
+                                    <p class="text-sm lh-150" style="font-size: 12px">Ruang Administrasi</p>
+                                </div>
+                                <div class="col-xs-6 mb-2 ml-3">
+                                    <p class="text-primary mb-1"><i class="i-Map mr-2"
+                                            style="font-size: 12px;"></i>Status</p>
+                                    <span class="badge badge-pill badge-outline-warning p-2 m-1 ml-3"
+                                        style="font-size: 11px;">Tidak Tersedia</span>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary btn-rounded" style="font-size: 11px;"
+                                href="detailaset.html">Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">010203-Kode Asset</div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Nama Aset</h5>
+                            <div class="row">
+                                <div class="col-xs-6 ml-3 mb-2">
+                                    <p class="text-primary mb-1"><i class="i-Home1 mr-2"
+                                            style="font-size: 12px;"></i>Lokasi</p>
+                                    <p class="text-sm lh-150" style="font-size: 12px">Ruang Administrasi</p>
+                                </div>
+                                <div class="col-xs-6 mb-2 ml-3">
+                                    <p class="text-primary mb-1"><i class="i-Map mr-2"
+                                            style="font-size: 12px;"></i>Status</p>
+                                    <span class="badge badge-pill badge-outline-success p-2 m-1 ml-3"
+                                        style="font-size: 11px;">Tersedia</span>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary btn-rounded" style="font-size: 11px;"
+                                href="detailaset.html">Selengkapnya</a>
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">010203-Kode Asset</div>
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Nama Aset</h5>
+                            <div class="row">
+                                <div class="col-xs-6 ml-3 mb-2">
+                                    <p class="text-primary mb-1"><i class="i-Home1 mr-2"
+                                            style="font-size: 12px;"></i>Lokasi</p>
+                                    <p class="text-sm lh-150" style="font-size: 12px">Ruang Administrasi</p>
+                                </div>
+                                <div class="col-xs-6 mb-2 ml-3">
+                                    <p class="text-primary mb-1"><i class="i-Map mr-2"
+                                            style="font-size: 12px;"></i>Status</p>
+                                    <span class="badge badge-pill badge-outline-success p-2 m-1 ml-3"
+                                        style="font-size: 11px;">Tersedia</span>
+                                </div>
+                            </div>
+                            <a class="btn btn-primary btn-rounded" style="font-size: 11px;"
+                                href="detailaset.html">Selengkapnya</a>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <br>
+
+
+                <br>
+                <br>
+
+
                 <!-- fotter end -->
             </div>
         </div>
@@ -314,21 +368,62 @@
     <div class="action" onclick="actionToggle();">
         <span>+</span>
         <ul>
-            <li>
-                <img src="images/folder.png" /><a href="tambah_asset.html">
-                    <h5 style="font-weight: 700">Tambah Data Aset</h5>
-                </a>
-            </li>
-            <li>
-                <img src="images/folderss.png" /><a href="tambah_jenis_asset.html">
-                    <h5 style="font-weight: 700">Tambah Jenis Aset</h5>
-                </a>
-            </li>
+            <li><img src="images/folder.png"><a href="tambah_asset.html">
+                    <h5 style="font-weight: 700;">Tambah Data Aset</h5>
+                </a></li>
+            <li><img src="images/folderss.png"><a href="tambah_jenis_asset.html">
+                    <h5 style="font-weight: 700;">Tambah Jenis Aset</h5>
+                </a></li>
         </ul>
     </div>
     <br>
     <br>
     <br>
+    <div class="container">
+
+        <h1>Example <small>Image gallery for m-commerce (try resizing your viewport to simulate a mobile
+                screen!)</small> </h1>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="js_image_selection" class="horizontal-scrollable-tabs">
+                    <div class="scroller arrow-left"><i class="fa fa-arrow-left"></i></div>
+                    <div class="scroller arrow-right"><i class="fa fa-arrow-right"></i></div>
+                    <div class="horizontal-tabs">
+                        <ul role="tablist" class="nav nav-tabs nav-tabs-horizontal">
+                            <li role="presentation" class="active"><a href="#image01" data-toggle="tab">image01</a></li>
+                            <li role="presentation"><a href="#image02" data-toggle="tab">image02</a></li>
+                            <li role="presentation"><a href="#image03" data-toggle="tab">image03</a></li>
+                            <li role="presentation"><a href="#image01" data-toggle="tab">image01</a></li>
+                            <li role="presentation"><a href="#image02" data-toggle="tab">image02</a></li>
+                            <li role="presentation"><a href="#image03" data-toggle="tab">image03</a></li>
+                            <li role="presentation"><a href="#image01" data-toggle="tab">image01</a></li>
+                            <li role="presentation"><a href="#image02" data-toggle="tab">image02</a></li>
+                            <li role="presentation"><a href="#image03" data-toggle="tab">image03</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="tab-content">
+                    <div id="image01" role="tabpanel" class="tab-pane fade in active"><img
+                            src="images/t-shirt-white.jpg" /></div>
+                    <div id="image02" role="tabpanel" class="tab-pane fade"><img src="images/t-shirt-orange.jpg" />
+                    </div>
+                    <div id="image03" role="tabpanel" class="tab-pane fade"><img src="images/t-shirt-green.jpg" /></div>
+                </div>
+            </div>
+        </div>
+
+
+    </div><!-- /.container -->
+
+    <br>
+    <br>
+
     <!-- Bottom Navbar -->
     <nav class="navbar navbar-dark bg-primary navbar-expand fixed-bottom d-md-none d-lg-none d-xl-none mt-3" style="
     border-top: 1px solid #d3d3d3;
@@ -336,66 +431,68 @@
     padding-top: 1.5px;
     padding-bottom: 0.25px;
   ">
-         <ul class="navbar-nav nav-justified w-100">
-             <li class="nav-item">
-                 <a href="beranda.html" class="nav-link">
-                     <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor"
-                         xmlns="http://www.w3.org/2000/svg">
-                         <path fill-rule="evenodd"
-                             d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
-                         <path fill-rule="evenodd"
-                             d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
-                     </svg><br>
-                     <span style="font-size: 10px">Beranda</span>
-                 </a>
-             </li>
- 
-             <li class="nav-item">
-                 <a href="index.html" class="nav-link">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor"
-                         class="bi bi-folder" viewBox="0 0 16 16">
-                         <path
-                             d="M.54 3.87L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z" />
-                     </svg><br>
-                     <span style="font-size: 10px">Data Aset</span>
-                 </a>
-             </li>
- 
-             <li class="nav-item">
-                 <a href="scan.html" class="nav-link">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" fill="currentColor"
-                         class="bi bi-upc-scan" viewBox="0 0 16 16">
-                         <path
-                             d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5zM3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-7zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7z" />
-                     </svg><br>
-                 </a>
-             </li>
- 
-             <li class="nav-item">
-                 <a href="report.html" class="nav-link">
-                     <svg xmlns="http://www.w3.org/2000/svg"width="1.5em" height="1.5em" fill="currentColor" class="bi bi-layout-text-window-reverse" viewBox="0 0 16 16">
-                         <path d="M13 6.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm0 3a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"/>
-                         <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM2 1a1 1 0 0 0-1 1v1h14V2a1 1 0 0 0-1-1H2zM1 4v10a1 1 0 0 0 1 1h2V4H1zm4 0v11h9a1 1 0 0 0 1-1V4H5z"/>
-                       </svg><br>
-                     <span style="font-size: 10px">Report</span>
-                 </a>
-             </li>
- 
-             <li class="nav-item">
-                 <a href="profile.html" class="nav-link">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor"
-                         class="bi bi-person" viewBox="0 0 16 16">
-                         <path
-                             d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
-                     </svg><br >
-                     <span style="font-size: 10px">Profil</span>
-                 </a>
-             </li>
-         </ul>
-     </nav>
+        <ul class="navbar-nav nav-justified w-100">
+            <li class="nav-item">
+                <a href="beranda.html" class="nav-link">
+                    <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                        <path fill-rule="evenodd"
+                            d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                    </svg><br>
+                    <span style="font-size: 10px">Beranda</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor"
+                        class="bi bi-folder" viewBox="0 0 16 16">
+                        <path
+                            d="M.54 3.87L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z" />
+                    </svg><br>
+                    <span style="font-size: 10px">Data Aset</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="scan.html" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="2.5em" fill="currentColor"
+                        class="bi bi-upc-scan" viewBox="0 0 16 16">
+                        <path
+                            d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5zM3 4.5a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7zm2 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-7zm3 0a.5.5 0 0 1 1 0v7a.5.5 0 0 1-1 0v-7z" />
+                    </svg><br>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="report.html" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor"
+                        class="bi bi-layout-text-window-reverse" viewBox="0 0 16 16">
+                        <path
+                            d="M13 6.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm0 3a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z" />
+                        <path
+                            d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM2 1a1 1 0 0 0-1 1v1h14V2a1 1 0 0 0-1-1H2zM1 4v10a1 1 0 0 0 1 1h2V4H1zm4 0v11h9a1 1 0 0 0 1-1V4H5z" />
+                    </svg><br>
+                    <span style="font-size: 10px">Report</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="profile.html" class="nav-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                    </svg><br>
+                    <span style="font-size: 10px">Profil</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
 
     <script src="js/plugins/jquery-3.3.1.min.js "></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/plugins/bootstrap.bundle.min.js "></script>
     <script src="js/plugins/perfect-scrollbar.min.js "></script>
     <script src="js/scripts/script.min.js "></script>
@@ -405,109 +502,36 @@
     <script src="js/scripts/datatables.script.min.js "></script>
     <script src="js/plugins/jquery.mousewheel.js"></script>
     <script src="js/plugins/jquery.scrolltabs.js"></script>
-    <script src="js/plugins/bootstrap-nav-tab-scrollable.js"></script>
+    <script src=></script>
+ 
+
     <script type="text/javascript">
         function actionToggle() {
-            var action = document.querySelector(".action");
-            action.classList.toggle("active");
+            var action = document.querySelector('.action');
+            action.classList.toggle('active')
         }
     </script>
-    <script type="text/JavaScript">
-              // Add Horizontal Tabs to jquery
-      (function ($){
-
-      $.fn.horizontalTabs = function() {
-        // Variable creation
-        var $elem = $(this),
-        widthOfReducedList = $elem.find('.nav-tabs-horizontal').width(),
-        widthOfList = 0,
-        currentPos = 0,
-        adjustScroll = function () {
-          widthOfList = 0;
-          $elem.find('.nav-tabs-horizontal li').each(function(index, item) {
-            widthOfList += $(item).width();
-          });
-
-          widthAvailale = $elem.width();
-
-          if (widthOfList > widthAvailale) {
-            $elem.find('.scroller').show();
-            updateArrowStyle(currentPos);
-            widthOfReducedList = $elem.find('.nav-tabs-horizontal').width();
-          } else {
-            $elem.find('.scroller').hide();
-          }
-        },
-        scrollLeft = function () {
-          $elem.find('.nav-tabs-horizontal').animate({
-              scrollLeft: currentPos - widthOfReducedList
-          }, 500);
-
-          if (currentPos - widthOfReducedList > 0) {
-            currentPos -= widthOfReducedList;
-          } else {
-            currentPos = 0;
-          }
-        },
-        scrollRight = function () {
-          $elem.find('.nav-tabs-horizontal').animate({
-            scrollLeft: currentPos + widthOfReducedList
-          }, 500);
-
-          if ( (currentPos + widthOfReducedList) < (widthOfList - widthOfReducedList)) {
-            currentPos += widthOfReducedList;
-          } else {
-            currentPos = (widthOfList - widthOfReducedList);
-          }
-        },
-        manualScroll = function () {
-          currentPos = $elem.find('.nav-tabs-horizontal').scrollLeft();
-
-          updateArrowStyle(currentPos);
-        },
-        updateArrowStyle = function (position) {
-          if (position >= (widthOfList - widthOfReducedList)) {
-            $elem.find('.arrow-right').addClass('disabled');
-          } else {
-            $elem.find('.arrow-right').removeClass('disabled');
-          };
-
-          if (position <= 0) {
-            $elem.find('.arrow-left').addClass('disabled');
-          } else {
-            $elem.find('.arrow-left').removeClass('disabled');
-          };
-        };
-
-        // Event binding
-        $(window).resize( function () {
-          adjustScroll();
+    <script type="text/javascript">
+        var tabs3 = null;
+        var tabs4 = null;
+        var tabs5 = null;
+        var tabs6 = null;
+        var tabs7 = null;
+        $(document).ready(function () {
+            $('#tabs1').scrollTabs();
+            $('#tabs2').scrollTabs();
+            tabs3 = $('#tabs3').scrollTabs();
+            tabs4 = $('#tabs4').scrollTabs();
+            tabs5 = $('#tabs5').scrollTabs();
+            tabs6 = $('#tabs6').scrollTabs();
+            tabs7 = $('#tabs7').scrollTabs();
         });
-
-        $elem.find('.arrow-left').on('click.horizontalTabs', function (){
-          scrollLeft();
-        });
-
-        $elem.find('.arrow-right').on('click.horizontalTabs', function (){
-          scrollRight();
-        });
-
-        $elem.find('.nav-tabs-horizontal').scroll( function (){
-          manualScroll();
-
-        });
-
-        // Initial Call
-        adjustScroll();
-
-        return this;
-      }
-
-      }(window.jQuery));
     </script>
+
     <script type="text/JavaScript">
-      $("#js_image_selection").horizontalTabs();
+        $("#js_image_selection").horizontalTabs();
     </script>
+
 </body>
 
 </html>
