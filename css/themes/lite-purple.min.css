@@ -21404,6 +21404,7 @@ a.typo_link.text-gray-900:after {
 .layout-sidebar-compact .main-header {
     position: absolute !important;
     width: 100%;
+    top: 0;
     left: 0;
     box-shadow: none;
     display: flex;
