@@ -21524,7 +21524,8 @@ a.typo_link.text-gray-900:after {
 
 .main-header .notification-dropdown {
     padding: 0;
-    max-height: 600px;
+    width: 350px;
+    max-height: 800px;
     cursor: pointer;
 }
 
@@ -21539,7 +21540,7 @@ a.typo_link.text-gray-900:after {
 .main-header .notification-dropdown .dropdown-item .notification-icon {
     background: #eee;
     height: 100%;
-    width: 44px;
+    width: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
