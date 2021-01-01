@@ -4720,7 +4720,18 @@ input[type="button"].btn-block {
 .nav-tabs {
     border-bottom: 1px solid #dee2e6;
     font-size: 12px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: -webkit-box;
+    display: -moz-box;
 }
+
+.nav-tabs .nav-tabs-horizontal {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+  }
 
 .nav-tabs .nav-item {
     margin-bottom: -1px;
@@ -24981,20 +24992,25 @@ html [type="button"],
 .nav-tabs {
     border: 0;
     font-size: 12px;
-    overflow-x: visible;
+    overflow-x: auto;
     overflow-y: hidden;
     display: -webkit-box;
+    display: -moz-box;
+    flex-wrap: nowrap;
+}
+
+.nav-tabs::-webkit-scrollbar {
+    width: 0 !important;
 }
 
 .nav-tabs .nav-item .nav-link {
     border: 0;
-    padding: 0.75rem;
     float: none;
+    white-space: nowrap;
 }
 
 .nav-tabs .nav-item .nav-link:not(.disabled) {
     color: inherit;
-    padding: 0.75rem;
     float: none;
 }
 
@@ -30145,15 +30161,13 @@ ngb-rating .half {
 }
 
 .nav-tabs {
-    border-bottom: 1px solid #e97d23;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .nav-tabs .nav-item .nav-link.active {
-    border: 1px solid transparent;
-    background: rgba(102, 51, 153, 0.1);
-    border-color: #e97d23 #e97d23 #fff;
+    background: rgba(202, 87, 24, 0.1);
 }
+
 
 .dropdown-toggle:after {
     display: inline-block;
@@ -35431,39 +35445,4 @@ ul.scroll_tabs_container {
     padding-bottom: 0px;
 }
 
-.horizontal-scrollable-tabs {
-    min-height: 50px;
-  }
   
-  .horizontal-scrollable-tabs .arrow-right {
-    float: right;
-  }
-  .horizontal-scrollable-tabs .arrow-left {
-    float: left;
-  }
-  /* Customize your arrows here */
-  .horizontal-scrollable-tabs .scroller {
-    font-size: 18px;
-    color: rgb(120, 36, 36);
-    padding: 10px 10px; 
-    display: none;
-  }
-  .horizontal-scrollable-tabs .scroller.disabled {
-    color: gray;
-  }
-  .horizontal-scrollable-tabs .horizontal-tabs .nav-tabs-horizontal {
-    overflow-x: auto;
-    overflow-y: hidden;
-    display: -webkit-box;
-    display: -moz-box;
-  }
-  /* As it has a mobile focus the scrollbar is removed */
-  .horizontal-scrollable-tabs .horizontal-tabs .nav-tabs-horizontal::-webkit-scrollbar {
-    width: 0 !important;
-  }
-  /* It's good to add a min-width so that the items have the same width */
-  .horizontal-scrollable-tabs .horizontal-tabs .nav-tabs-horizontal > li {
-    float: none;
-    min-width: 50px;
-    text-align: center;
-  }
