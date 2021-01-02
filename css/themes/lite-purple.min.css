@@ -21402,7 +21402,7 @@ a.typo_link.text-gray-900:after {
 }
 
 .layout-sidebar-compact .main-header {
-    position: absolute !important;
+    position: fixed !important;
     width: 100%;
     top: 0;
     left: 0;
@@ -21411,8 +21411,8 @@ a.typo_link.text-gray-900:after {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    background: transparent;
-    z-index: 100;
+    background: white;
+    z-index: 1000;
     transition: all .24s ease-in-out;
 }
 
@@ -21428,7 +21428,7 @@ a.typo_link.text-gray-900:after {
     flex-wrap: wrap;
     justify-content: space-between;
     background: #fff;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .main-header .menu-toggle {
@@ -25009,6 +25009,7 @@ html [type="button"],
     border: 0;
     float: none;
     white-space: nowrap;
+    position: relative;
 }
 
 .nav-tabs .nav-item .nav-link:not(.disabled) {
@@ -35447,4 +35448,10 @@ ul.scroll_tabs_container {
     padding-bottom: 0px;
 }
 
+.box_background {
+    background: #fff;
+    width: 100%;
+    position: relative;
+    z-index: inherit;
+}
   
