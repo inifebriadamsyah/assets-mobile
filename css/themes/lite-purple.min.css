@@ -5201,7 +5201,7 @@ input[type="button"].btn-block {
 
 .card-body {
     flex: 0 0 auto;
-    padding: 1.25rem;
+    padding: 0.5rem 1.25rem;
 }
 
 .card-title {
