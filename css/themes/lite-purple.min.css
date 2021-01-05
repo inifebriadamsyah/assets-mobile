@@ -35553,4 +35553,13 @@ ul.scroll_tabs_container {
   .calendarsasa{
     width: 0;
   }
+
+  .justbg {
+      top: 70px;
+      position: fixed;
+      background: #fff;
+      margin-bottom: 1px solid #c4c4c4;
+
+  }
+
   
