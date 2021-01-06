@@ -35466,7 +35466,6 @@ ul.scroll_tabs_container {
   }
   .annotated-list .list > div {
     padding-bottom: 8px;
-    border-top: solid 1px rgba(255, 255, 255, 0.1);
   }
   .annotated-list .avatar {
     max-width: 150px;
