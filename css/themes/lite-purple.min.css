@@ -5176,26 +5176,12 @@ input[type="button"].btn-block {
     position: relative;
     display: flex;
     flex-direction: column;
-    min-width: 30%;
+    min-width: 0;
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
-}
-
-@media screen and (max-width: 468px) {
-    .card {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        min-width: 92%;
-        word-wrap: break-word;
-        background-color: #fff;
-        background-clip: border-box;
-        border: 1px solid rgba(0, 0, 0, 0.125);
-        border-radius: 0.25rem;
-    }
 }
 
 .card>hr {
@@ -11329,7 +11315,7 @@ a.text-gray-900:focus {
 }
 
 .sidebar-dark-purple .sidebar-left {
-    background: #25221f;
+    background: #2d2625;
 }
 
 .dark-purple {
@@ -21417,7 +21403,8 @@ a.typo_link.text-gray-900:after {
 }
 
 .layout-sidebar-compact .main-header {
-    position: fixed !important;
+    position: absolute !important;
+    margin-right: 24px;
     width: 100%;
     top: 0;
     left: 0;
@@ -21429,6 +21416,7 @@ a.typo_link.text-gray-900:after {
     background: white;
     z-index: 1000;
     transition: all .24s ease-in-out;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1); 
 }
 
 @media screen and (max-width: 468px) {
@@ -21682,7 +21670,7 @@ a.typo_link.text-gray-900:after {
     top: 0;
     height: 100vh;
     box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.08);
-    z-index: 101;
+    z-index: 1001;
 }
 
 .layout-sidebar-compact .sidebar-left {
@@ -29558,8 +29546,8 @@ ngb-rating .half {
 .customizer {
     position: fixed;
     z-index: 9999;
-    top: 17em;
-    right: -380px;
+    top: 12em;
+    right: -400px;
     transition: .3s all ease-in-out;
     width: 400px;
 }
@@ -29596,7 +29584,7 @@ ngb-rating .half {
     background: #fff;
     box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.08);
     max-height: calc(100vh - 140px);
-    min-width: 36rem;
+    min-width: 24rem;
     overflow-y: scroll;
     overflow-x: visible;
 }
